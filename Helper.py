@@ -5,9 +5,7 @@ import pyautogui
 import keyboard
 
 def count_tabs_and_spaces(line):
-    # Count the number of tab characters
     tab_count = line.count('\t')
-    # Count the number of sets of 4 spaces
     space_count = line.count('    ')
     return tab_count + space_count
 
@@ -66,7 +64,7 @@ def open_file():
             text_entry.delete("1.0", tk.END)
             text_entry.insert(tk.END, file_content)
 
-# Set up the GUI
+#!!GUI
 root = tk.Tk()
 root.title("Cheater")
 root.geometry("800x600")  # Set initial size of the window
@@ -83,7 +81,7 @@ text_entry.pack(pady=10, expand=True, fill='both')
 
 tk.Label(root, text="Interval before starting (seconds):").pack(pady=5)
 start_delay_entry = tk.Entry(root)
-start_delay_entry.insert(0, "3")  # Default start delay is 5 seconds
+start_delay_entry.insert(0, "5")
 start_delay_entry.pack(pady=5)
 
 tk.Button(root, text="Start Typing", command=start_typing).pack(pady=10)
