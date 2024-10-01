@@ -1,0 +1,30 @@
+Rect(0, 0, 400, 400, fill=gradient('lightGreen', 'honeydew'))
+# branches and foliage
+Rect(0, 300, 400, 10, fill='saddleBrown')
+Oval(300, 270, 20, 60, fill=gradient('darkGreen', 'forestGreen'))
+Oval(300, 340, 20, 60, fill=gradient('darkGreen', 'forestGreen'))
+Oval(350, 270, 20, 60, fill=gradient('darkGreen', 'forestGreen'))
+Oval(350, 340, 20, 60, fill=gradient('darkGreen', 'forestGreen'))
+Polygon(0, 150, 330, 0, 355, 0, 0, 165,
+        fill=gradient('olive', 'darkOliveGreen', start='left'))
+Oval(100, 100, 400, 200, fill=None, border='olive', borderWidth=10)
+Star(330, 30, 100, 20, fill=gradient('forestGreen', 'yellowGreen'), roundness=90)
+Star(65, 35, 85, 23, fill=gradient('darkGreen', 'lightGreen'), roundness=95)
+Star(210, 20, 75, 15, fill=gradient('green', 'paleGreen'), roundness=90)
+# Store Nate the chameleon in a variable named nate.
+### Fix Your Code Here ###
+h = Polygon(20, 280, 100, 290, 140, 290, 140, 300, 150, 300, 150, 290,
+        195, 290, 195, 300, 205, 300, 205, 290, 250, 290, 250, 270,
+        220, 230, 205, 245, 100, 275,
+        fill=gradient('purple', 'darkViolet', start='right'))
+# Nate's eye
+Circle(225, 260, 5, border='yellow', borderWidth=3)
+def onMousePress(mouseX, mouseY):
+    # Clicking the mouse scares Nate. Hide Nate by changing his color!
+    ### Place Your Code Here ###
+    h.fill=gradient("paleGreen","lightGreen",start="right")
+    pass
+def onMouseRelease(mouseX, mouseY):
+    # Now the mouse has gone away, Nate can come out of hiding and change back
+    # to his original color.
+    h.fill = gradient('purple', 'darkViolet', start='right')

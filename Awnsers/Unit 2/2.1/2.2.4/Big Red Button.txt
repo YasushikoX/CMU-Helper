@@ -1,0 +1,21 @@
+background = Rect(0, 0, 400, 400, fill='dimGray')
+# button shadow
+Circle(230, 230, 100, fill='darkRed')
+button = Circle(200, 200, 100, fill=gradient('red', 'fireBrick', start='left-top'))
+# messages
+message1 = Label('Do not press!', 200, 20, fill='white', size=20)
+message2 = Label('Oh no!', 200, 60, fill=None, size=50)
+def onMousePress(mouseX, mouseY):
+    # Press the button.
+    ### Place Your Code Here ###
+    # Change which message is being displayed.
+    ### (HINT: To make a message disappear, you can give it a fill of None!)
+    ### Place Your Code Here ###
+    message1.fill=None
+    # Change the background color.
+    ### Place Your Code Here ###
+    background.fill="gold"
+    message2.fill="black"
+    button.centerX=215
+    button.centerY=215
+    pass

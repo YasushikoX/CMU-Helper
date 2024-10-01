@@ -1,0 +1,32 @@
+# sea
+Rect(0, 0, 400, 400, fill=gradient('deepSkyBlue', 'blue', start='top'))
+# sun rays
+Star(350, 0, 450, 20, roundness=20, fill='white', opacity=5)
+Star(350, 0, 350, 20, roundness=10, fill='white', opacity=10)
+# coral
+Polygon(0, 200, 20, 205, 35, 215, 25, 240, 40, 250, 45, 275, 40, 290, 30, 300,
+        25, 320, 40, 330, 60, 340, 80, 330, 95, 335, 115, 325, 120, 345,
+        140, 345, 175, 360, 205, 345, 240, 350, 260, 360, 275, 360, 280, 345,
+        300, 345, 335, 330, 350, 310, 345, 290, 355, 270, 370, 260, 370, 240,
+        380, 215, 370, 200, 375, 175, 390, 155, 400, 145, 400, 400, 0, 400,
+        fill=gradient('lightCoral', 'orchid', 'salmon', 'lightCoral', start='left'))
+def drawPufferfish():
+    # body
+    Star(150, 200, 50, 50, roundness=80,
+         fill=gradient('olive', 'white', start='top'))
+    Oval(190, 200, 20, 10, fill='olive')
+    Polygon(150, 200, 150, 205, 125, 210, 125, 190, fill='olive')
+    Circle(170, 185, 8, border='white', borderWidth=3)
+    # bubbles
+    Circle(210, 185, 5, fill='deepSkyBlue', border='lightSkyBlue')
+    Circle(210, 165, 8, fill='deepSkyBlue', border='lightSkyBlue')
+    Circle(210, 140, 10, fill='deepSkyBlue', border='lightSkyBlue')
+def drawSeaUrchin(points):
+    # Change the number of spikes the sea urchin has using the function parameter.
+    ### Fix Your Code Here ###
+    Star(320, 335, 50, points, fill=gradient('black', 'purple'))
+def drawStarfish(radius):
+    # Change the radius of the starfish using the function parameter.
+    ### Fix Your Code Here ###
+    Star(50, 330, radius, 5, fill=gradient('peachPuff', 'orange'))
+#Done
