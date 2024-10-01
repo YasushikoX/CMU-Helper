@@ -1,4 +1,5 @@
 mac_build.py
+build_env
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -162,3 +163,4 @@ cython_debug/
 #.idea/
 .DS_Store
 *.exe
+build_env/bin/activate
