@@ -7,7 +7,7 @@ This tool is designed to help with CMU CS Academy homework, it provides answers 
 ## User Guide
 
 ### Installation
-- Download the app from the releases section.
+- Download the app from the [releases section](https://github.com/YasushikoX/Cheater/releases).
 - Note: Launching it may take some time.(Up to few minutes)
 
 ### Usage
